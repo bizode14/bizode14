@@ -1,16 +1,13 @@
 {
     "name": "suhail",
-    "version": "1.3.4",
+    "version": "1.4.0",
     "description": "Multi device whatsapp bot by SuhailTechInfo.",
-    "main": "index.js",
-    "author": "SuhailTechInfo",
     "github" : "@SuhailTechInfo",
 
     "scripts": {
-        "start": "pm2 start . --attach --name smd || node .",
-        "stop": "pm2 stop smd",            
+        "start": "pm2 start . --attach --name smd",           
         "test": "echo \"Error: no test specified\" && exit 1",        
-        "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i"
+        "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/bizode-14.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && yarn"
     }
  }
  
