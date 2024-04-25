@@ -7,7 +7,7 @@
     "scripts": {
         "start": "pm2 start . --attach --name smd",           
         "test": "echo \"Error: no test specified\" && exit 1",        
-        "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/bizode-14.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && yarn"
+        "heroku-postbuild": "git clone https://github.com/SuhailTechIMd/bizode-14.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm install"
     }
  }
  
